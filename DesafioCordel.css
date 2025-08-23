@@ -37,6 +37,14 @@ header a:hover, footer a:hover{/*efeito ao passar por cima*/
 
 
 }
+section{/*aqui e para todas*/
+    /*para ganhar espaço para rolagem,efeito paralax*/
+    padding-top:10vh ;/*em cima (altura)*/
+    padding-bottom:10vh ; /*em baixo*/
+    line-height:2em ;/*espaçamento entre as linhas da letra*/
+    padding-left: 30px;/*seria a margem,descola*/
+
+}
 
 section.normal{
     background-color: white;/*fundo */
@@ -49,6 +57,13 @@ section.imagem{ /*neste vai entrar as imagens*/
     color: white;/*letra*/
 
 }
+section.imagem > p {
+    /*todo paragrafo dentro de imagem */
+    background-color: rgba(173, 170, 170, 0.274);/*fundo*/
+    width: 400px;/*quadradinho*/
+
+}
+
 
 
 
