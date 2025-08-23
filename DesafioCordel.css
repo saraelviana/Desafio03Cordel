@@ -1,5 +1,66 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Splash&display=swap');/*Passion+One*/
+/*
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Splash&family=Sriracha&display=swap');/*Srirach*/
+
+/*.splash-regular {
+  font-family: "Splash", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Passion+One:wght@400;700;900&display=swap');/**/
+/*
+.meow-script-regular {
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+
+
+
+
+:root{
+    --fonte1:verdana,Geneva,tahoma,sans-serif;
+    --fonte2:"Passion One", sans-serif; /*titulos*/
+    --fonte3:"Splash", cursive;/*conteudo*/
+    --fonte4:"Meow Script", cursive;/*talvez*/
+
+}
+
+
+
+
 *{
     margin: 0%;
     padding: 0%;
@@ -7,6 +68,7 @@
 html,body{
     min-height: 100vh;/*o tamanho minimo sera de 100% vil port (Haltura)*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 header{
@@ -19,6 +81,9 @@ header{
 header > h1{ /*cordel mordeno*/
     padding: 50px;/*em cima */
     font-variant: small-caps;/*pode ser assim: text-transform: uppercase;(letra maiscula)..font-variant: small-caps;*/
+    font-family: var(--fonte2);
+    font-size: 4vw;/* em vez de 4em (em) sera 4ew (vw)-- vai trabalhar a largura,simular a tela do celular o tamanho da letra*/
+
     
 }
 header > p {/*tem o nome do auto*/
@@ -39,10 +104,12 @@ header a:hover, footer a:hover{/*efeito ao passar por cima*/
 }
 section{/*aqui e para todas*/
     /*para ganhar espaço para rolagem,efeito paralax*/
-    padding-top:10vh ;/*em cima (altura)*/
-    padding-bottom:10vh ; /*em baixo*/
-    line-height:2em ;/*espaçamento entre as linhas da letra*/
+    padding-top:5vh ;/*em cima (altura)*/
+    padding-bottom:5vh ; /*em baixo*/
+    line-height:1em ;/*espaçamento entre as linhas da letra*/
     padding-left: 30px;/*seria a margem,descola*/
+    font-family:var(--fonte4);
+    font-size: 3vw;/* a largura tamanho da letra*/
 
 }
 
@@ -60,7 +127,8 @@ section.imagem{ /*neste vai entrar as imagens*/
 section.imagem > p {
     /*todo paragrafo dentro de imagem */
     background-color: rgba(173, 170, 170, 0.274);/*fundo*/
-    width: 400px;/*quadradinho*/
+    display: inline-block;/*este aqui a caixa se adapta ao conteudo-- pois assim:width: 400px;- fica muito grande em tela pequena*/
+    padding: 5%;/*nao ficar muito grudado*/
 
 }
 
