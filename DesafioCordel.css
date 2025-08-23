@@ -110,6 +110,12 @@ section{/*aqui e para todas*/
     padding-left: 30px;/*seria a margem,descola*/
     font-family:var(--fonte4);
     font-size: 3vw;/* a largura tamanho da letra*/
+    background-size: cover;
+    background-attachment: fixed;/*efeito paralax - fixed (fixa a imagem , enquanto rola a pagina e dar o efeito )*/
+
+}
+section > p {
+    padding-bottom: 1em;
 
 }
 
@@ -120,15 +126,29 @@ section.normal{
 
 }
 section.imagem{ /*neste vai entrar as imagens*/
-    background-color: rgb(134, 134, 134);/*fundo*/
+    background-color: rgba(51, 51, 51);/*fundo*/
     color: white;/*letra*/
+    box-shadow: inset 6px,6px,13px,0px, rgba(0, 0, 0, 0.774);/* inset(sombra pra dentro)- 13px(espalhamento)- 0px(ampliação) - */
 
 }
 section.imagem > p {
     /*todo paragrafo dentro de imagem */
-    background-color: rgba(173, 170, 170, 0.274);/*fundo*/
-    display: inline-block;/*este aqui a caixa se adapta ao conteudo-- pois assim:width: 400px;- fica muito grande em tela pequena*/
-    padding: 5%;/*nao ficar muito grudado*/
+    background-color: rgba(0, 0, 0, 0.514);/*fundo*/
+    display:inline-block;/*este aqui a caixa se adapta ao conteudo-- pois assim:width: 400px;- fica muito grande em tela pequena*/
+    padding: 3%;/*nao ficar muito grudado*/
+    text-shadow: 1px 1px 0px black;
+    
+
+}
+section#img01{
+    background-image:url(imagem/background001.jpg);
+    background-position: right center;/*a direita e centralizado*/
+    
+
+}
+section#img02{
+    background-image: url(imagem/background002.jpg);
+    
 
 }
 
